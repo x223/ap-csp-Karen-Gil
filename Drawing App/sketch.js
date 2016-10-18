@@ -2,6 +2,7 @@ var weight = 10
 var strokeColor = "black"
 function setup() {
   createCanvas(500,500);
+  text('a= Blue b= Black r=red g=Green o= Orange y= Yellow e= Erase',10,10 );
 }
 
 function draw() {
@@ -9,6 +10,7 @@ function draw() {
   stroke(strokeColor)
   strokeWeight(weight)
   line (pmouseX, pmouseY, mouseX, mouseY);
+ 
  }
 }
 
@@ -30,8 +32,17 @@ function keyTyped() {
     strokeColor = 'orange';
     weight = 10
        weight = 10
+  } else if (key === 'y') {
+    strokeColor = 'yellow';
+    weight = 10} 
+    else if (key === 'a') {
+    strokeColor = 'blue';
+    weight = 10
+  
   } else if (key === 'e') {
     strokeColor = 'white';
     weight = 50
+ 
+
   }
   }
